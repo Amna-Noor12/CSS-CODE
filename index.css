@@ -1,0 +1,75 @@
+/* Reset and Base Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 10px 20px;
+    color: white;
+}
+.navbar .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+.navbar .nav-links li {
+    margin: 10px;
+}
+.navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+.navbar .nav-links a:hover {
+    color: #0004d4;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu-icon span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        background: #333;
+        border-radius: 8px;
+        padding: 10px;
+    }
+    .nav-links.active {
+        display: flex;
+    }
+    .menu-icon {
+        display: flex;
+    }
+    .nav-links li {
+        margin: 10px 0;
+    }
+}

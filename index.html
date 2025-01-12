@@ -1,0 +1,44 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">&#x1F3E0;
+            Welcome to my Website</div>
+        <div class="menu-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="about.html"> About </a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="project1.html">Project Details </a></li>
+           <li><a href="my blog.html">My Blog</a></li>
+           <li><a href="skill.html">Skills</a></li>
+            <li><a href="table.html">tables</a></li>
+            <li> <a href="contact.html">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+     </header>
+     <main>
+         <p>This website showcases my projects, skills, and thoughts. Explore to learn more!</p>
+         <p><a href="portfolio.html">View My Portfolio</a> or <a href="about.html">Learn About Me</a></p>
+     </main>
+     <footer>
+         <p>&copy; 2024 Your Name. All rights reserved.</p>
+     </footer>
+</body>
+</html>
